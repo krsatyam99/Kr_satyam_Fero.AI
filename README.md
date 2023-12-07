@@ -28,6 +28,11 @@ Link https://api.postman.com/collections/24162967-ec370446-852c-4482-bd72-d1a184
 ![Fero Ai](https://github.com/krsatyam99/Kr_satyam_Fero.AI/assets/103446420/591aa6dc-717d-4912-9136-dd2ef46c3201)
 
 
+### Admin Panel
+![Fero Api](https://github.com/krsatyam99/Kr_satyam_Fero.AI/assets/103446420/a02d4eb6-f854-41ad-92de-f72fee27a8b5)
+
+
+
 ## Genericviews and types used in the project
 In Django REST Framework (DRF), generic views are a set of pre-built class-based views that provide common patterns for performing CRUD (Create, Retrieve, Update, Delete) operations on models. These generic views help in reducing code duplication and boilerplate by providing a standardized way to handle common actions.
 ### generics.CreateAPIView
