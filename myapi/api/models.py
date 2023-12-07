@@ -25,19 +25,7 @@ class Order(models.Model):
     order_date = models.DateField()
     address = models.CharField(max_length=255)
 
-    # def save(self, *args, **kwargs):
-    #     # Auto-generate order number with prefix ORD and sequential number
-    #     if not self.order_number:
-    #         last_order = Order.objects.order_by('-id').first()
-    #         if last_order:
-    #             last_number = int(last_order.order_number[3:])  # Extract the numeric part
-    #             new_number = last_number + 1
-    #         else:
-    #             new_number = 1
-
-    #         self.order_number = f'ORD{new_number:05d}'
-
-    #     super().save(*args, **kwargs)
+   
     def save(self, *args, **kwargs):
         # Auto-generate order number with prefix ORD and sequential number
         if not self.order_number:
