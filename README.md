@@ -8,6 +8,9 @@
 4. python manage.py migrate.\
 5.Python mnanage.py createsuperuser\
 6.Python manage.py runserver
+#### Project Structure [**Note: All The business Logics and validations are Written In serializers.py File ]
+![Screenshot (27)](https://github.com/krsatyam99/Kr_satyam_Fero.AI/assets/103446420/9d0b34a9-8248-4ddc-83d3-83cfb6612e62)
+
 ## PostMan collection 
 Link https://api.postman.com/collections/24162967-ec370446-852c-4482-bd72-d1a18456de69?access_key=PMAT-01HH1YSSKVTDMW4MGDPCTYVS6F
 ## Important Api end points
@@ -56,3 +59,7 @@ In Django REST Framework (DRF), generics.RetrieveUpdateDestroyAPIView is a class
 generics.RetrieveUpdateDestroyAPIView:
 Purpose: Used for handling HTTP GET (retrieve), PUT and PATCH (update), and DELETE (destroy) requests for a single object based on its primary key.
 Inheritance: Inherits from generics.GenericAPIView, mixins.RetrieveModelMixin, mixins.UpdateModelMixin, and mixins.DestroyModelMixin.
+
+#### Thanks and Regards
+Kumar Satyam
+https://www.linkedin.com/in/kumar-satyam-769340243/
