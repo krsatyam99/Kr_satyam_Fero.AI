@@ -1,7 +1,7 @@
 # Problem Statement
 #### An e-commerce API using Django Rest Framework to manage customers, orders, and products.The system should be able to handle multiple customers, each having multiple orders, and each order containing multiple products with corresponding quantities.
 ## Set up Project Steps:
-1.clone the project using \
+1.clone the project using git clone https://github.com/krsatyam99/Kr_satyam_Fero.AI.git \
 2. pip install -r requirements.txt\
 3.python manage.py makemigrations\
 4. python manage.py migrate.\
