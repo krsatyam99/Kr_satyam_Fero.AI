@@ -1,6 +1,8 @@
 from rest_framework import serializers
 from .models import Customer, Product, Order, OrderItem
 from django.utils import timezone
+from .models import Order, OrderItem
+
 
 class CustomerSerializer(serializers.ModelSerializer):
     class Meta:
@@ -42,56 +44,9 @@ class ProductSerializer(serializers.ModelSerializer):
 
 
 
-class OrderItemSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = OrderItem
-        fields = ['product', 'quantity']
-
-
-# class OrderSerializer(serializers.ModelSerializer):
-#     orderitem_set = OrderItemSerializer(many=True)
-
-#     class Meta:
-#         model = Order
-#         fields = ['id', 'customer', 'order_date', 'address', 'orderitem_set']
-
-#     def create(self, validated_data):
-#         orderitems_data = validated_data.pop('orderitem_set')
-#         order = Order.objects.create(**validated_data)
-        
-#         for orderitem_data in orderitems_data:
-#             OrderItem.objects.create(order=order, **orderitem_data)
-
-#         return order
-#     def update(self, instance, validated_data):
-#         instance.customer = validated_data.get('customer', instance.customer)
-#         instance.order_date = validated_data.get('order_date', instance.order_date)
-#         instance.address = validated_data.get('address', instance.address)
-
-#         # Update order items
-#         orderitems_data = validated_data.get('orderitem_set', [])
-#         existing_orderitems = instance.orderitem_set.all()
-
-#         for orderitem_data in orderitems_data:
-#             orderitem_id = orderitem_data.get('id', None)
-#             if orderitem_id:
-#                 # Update existing order item
-#                 orderitem = OrderItem.objects.get(id=orderitem_id, order=instance)
-#                 orderitem.product = orderitem_data.get('product', orderitem.product)
-#                 orderitem.quantity = orderitem_data.get('quantity', orderitem.quantity)
-#                 orderitem.save()
-#             else:
-#                 # Create new order item
-#                 OrderItem.objects.create(order=instance, **orderitem_data)
-
-      
-#         return instance
 
 
 
-from django.utils import timezone
-from rest_framework import serializers
-from .models import Order, OrderItem
 
 class OrderItemSerializer(serializers.ModelSerializer):
     class Meta:
